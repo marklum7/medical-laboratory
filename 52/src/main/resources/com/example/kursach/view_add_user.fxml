@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="main1" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.controller_add_user">
+    <children>
+        <Button fx:id="registration_button" layoutX="83.0" layoutY="330.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="133.0" style="-fx-background-color: #40ccd8;" text="Добавить" textFill="WHITE" />
+      <VBox layoutX="48.0" layoutY="33.0" prefHeight="274.0" prefWidth="203.0">
+         <children>
+              <TextField fx:id="name_field" prefHeight="27.0" prefWidth="203.0" promptText="Имя" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="surname_field" prefHeight="27.0" prefWidth="203.0" promptText="Фамилия" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="patronymic_field" prefHeight="27.0" prefWidth="203.0" promptText="Отчество" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <ComboBox fx:id="gender_field" editable="true" prefHeight="25.0" prefWidth="203.0" promptText="пол" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8;" />
+            <DatePicker fx:id="dilution_date_field" prefHeight="27.0" prefWidth="203.0" promptText="дата рождения" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="login_field" prefHeight="27.0" prefWidth="203.0" promptText="логин" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="password_field" prefHeight="27.0" prefWidth="203.0" promptText="пароль" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="passport_date_field" prefHeight="27.0" prefWidth="203.0" promptText="паспортные данные" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="phone_field" prefHeight="27.0" prefWidth="203.0" promptText="телефон" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="mail_field" prefHeight="27.0" prefWidth="203.0" promptText="почта" style="-fx-background-color: transpanent; -fx-border-color: #40ccd8; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

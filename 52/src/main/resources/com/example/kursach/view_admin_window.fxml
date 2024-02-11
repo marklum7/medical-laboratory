@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.controller_admin_window">
+   <children>
+      <AnchorPane prefHeight="145.0" prefWidth="218.0" style="-fx-background-color: #40ccd8; -fx-background-radius: 0 0 30 30;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="149.0" layoutX="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMAGE/login2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="116.0" prefHeight="21.0" prefWidth="65.0" text="ADMIN">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TabPane layoutY="219.0" prefHeight="181.0" prefWidth="600.0" style="-fx-background-color: transpanent;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: transpanent;" text="Клиенты">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="400.0" prefWidth="600.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="8000.0" prefWidth="600.0">
+                                 <children>
+                                    <TableView fx:id="user_table" prefHeight="380.0" prefWidth="590.0" style="-fx-background-color: transpanent;">
+                                      <columns>
+                                        <TableColumn fx:id="name_table1" prefWidth="39.3333740234375" text="Имя" />
+                                        <TableColumn fx:id="surname_table1" prefWidth="59.33331298828125" text="Фамилия" />
+                                          <TableColumn fx:id="patronymic_table1" prefWidth="67.3333740234375" text="Отчество" />
+                                          <TableColumn fx:id="gender_table1" prefWidth="36.666656494140625" text="Пол" />
+                                          <TableColumn fx:id="dilution_date_table1" prefWidth="75.3333740234375" text="Дата Рождения" />
+                                          <TableColumn fx:id="login_table1" prefWidth="50.66668701171875" text="Логин" />
+                                          <TableColumn fx:id="password_table1" minWidth="0.0" prefWidth="61.33331298828125" text="Пароль" />
+                                          <TableColumn fx:id="passport_date_table1" minWidth="0.0" prefWidth="64.6666259765625" text="Паспортные Данные" />
+                                          <TableColumn fx:id="phone_table1" minWidth="0.0" prefWidth="70.00006103515625" text="Телефон" />
+                                          <TableColumn fx:id="mail_table1" prefWidth="80.6666259765625" text="Почта" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: transpanent;" text="Сотрудник">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="200.0" prefWidth="600.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="8000.0" prefWidth="600.0">
+                                 <children>
+                                    <TableView fx:id="worker_table" prefHeight="380.0" prefWidth="609.0" style="-fx-background-color: transpanent;">
+                                       <columns>
+                                          <TableColumn fx:id="name_table2" prefWidth="39.3333740234375" text="Имя" />
+                                          <TableColumn fx:id="surname_table2" prefWidth="59.33331298828125" text="Фамилия" />
+                                          <TableColumn fx:id="patronymic_table2" prefWidth="67.3333740234375" text="Отчество" />
+                                          <TableColumn fx:id="gender_table2" prefWidth="36.666656494140625" text="Пол" />
+                                          <TableColumn fx:id="dilution_date_table2" prefWidth="75.3333740234375" text="Дата Рождения" />
+                                          <TableColumn fx:id="login_table2" prefWidth="50.66668701171875" text="Логин" />
+                                          <TableColumn fx:id="password_table2" minWidth="0.0" prefWidth="61.33331298828125" text="Пароль" />
+                                          <TableColumn fx:id="passport_date_table2" minWidth="0.0" prefWidth="64.6666259765625" text="Паспортные Данные" />
+                                          <TableColumn fx:id="phone_table2" minWidth="0.0" prefWidth="70.00006103515625" text="Телефон" />
+                                          <TableColumn fx:id="mail_table2" prefWidth="80.6666259765625" text="Почта" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="back_button" layoutX="72.0" layoutY="164.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="74.0" style="-fx-background-color: #40ccd8;" text="Выйти" textFill="WHITE" />
+      <Text fill="#40ccd8" layoutX="313.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лаборатория здоровья">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="101.0" fitWidth="101.0" layoutX="364.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../IMAGE/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="add_user" layoutX="282.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #40ccd8;" text="Добавить Клиента" textFill="WHITE" />
+      <Button fx:id="remove_user" layoutX="282.0" layoutY="175.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #40ccd8;" text="Удалить Клиента" textFill="WHITE" />
+      <Button fx:id="add_worker" layoutX="416.0" layoutY="135.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #40ccd8;" text="Добавить Работника" textFill="WHITE" />
+      <Button fx:id="remove_worker" layoutX="416.0" layoutY="175.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: #40ccd8;" text="Удалить Работника" textFill="WHITE" />
+   </children>
+</AnchorPane>
